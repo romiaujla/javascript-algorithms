@@ -8,48 +8,10 @@ t – (s-k + x should return false
 (((x+z)/(x*y)) + 4 ) should return true
 x + y / ) z + 1 ( * (r - z) should return false
 (x + y) / ) z + 1 ( * (r - z) should return false
+x*(x+z) + [x/(y-z) + d] should return true 
+t – (s-k) } + x should return false 
+x*(x+z) + {][x/(y-z) + d][} should return false
 */
-
-// function balancedParenthesis(equation){
-  
-//   let pStack = [];
-
-//   for(const char of equation){
-
-//     if(char === '('){
-//       pStack.push('(');
-//     }
-
-//     if(char === ')'){
-//       if(!pStack.length){
-//         return false;
-//       }
-//       pStack.pop();
-//     }
-
-//     if(char === '(' || char === ')'){
-//       console.log()
-//       console.log(`char`, char);
-//       console.log(`pStack`, pStack);
-//     }
-
-
-//   }
-
-//   // if we reach this point and our Stack has paranthesis, that means
-//   // our equation is not balanced
-//   if(pStack.length){
-//     return false;
-//   }
-
-//   return true;
-// }
-
-
-
-// x*(x+z) + [x/(y-z) + d] should return true 
-// t – (s-k) } + x should return false 
-// x*(x+z) + {][x/(y-z) + d][} should return false
 
 
 
@@ -105,12 +67,46 @@ function balancedParenthesis(equation){
   return true;
 }
 
-console.log(`expect 1 true: `, balancedParenthesis(`x*(x+z) + [x/(y-z) + d]`));
-console.log(`expect 2 false: `, balancedParenthesis(`t – (s-k) } + x`));
-console.log(`expect 3 false: `, balancedParenthesis(`x*(x+z) + {][x/(y-z) + d][}`));
-console.log(`expect 4 true: `, balancedParenthesis(`x*(x+z) + x/(y-z) + d`));
-console.log(`expect 5 false: `, balancedParenthesis(`t – (s-k + x `))
-console.log(`expect 6 false: `, balancedParenthesis(`((x + y) * (x + 7)) / )y(`))
-console.log(`expect 7 true: `, balancedParenthesis(`(((x+z)/(x*y)) + 4 )`))
-console.log(`expect 8 false: `, balancedParenthesis(`x + y / ) z + 1 ( * (r - z)`))
-console.log(`expect 9 false: `, balancedParenthesis(`(x + y) / ) z + 1 ( * (r - z)`))
+const testCases = [
+  {
+    testCase: 'x*(x+z) + [x/(y-z) + d]',
+    expectedResult: true
+  },
+  {
+    testCase: 't – (s-k + x',
+    expectedResult: false
+  },
+  {
+    testCase: '((x + y) * (x + 7)) / )',
+    expectedResult: false
+  },
+  {
+    testCase: '(((x+z)/(x*y)) + 4 )',
+    expectedResult: true
+  },
+  {
+    testCase: 'x + y / ) z + 1 ( * (r - z)',
+    expectedResult: false
+  },
+  {
+    testCase: '(x + y) / ) z + 1 ( * (r - z)',
+    expectedResult: false
+  },
+  {
+    testCase: 'x*(x+z) + [x/(y-z) + d]',
+    expectedResult: true
+  },
+  {
+    testCase: 't – (s-k) } + x',
+    expectedResult: false
+  },
+  {
+    testCase: 'x*(x+z) + {][x/(y-z) + d][}',
+    expectedResult: false
+  },
+]
+
+testCases.map((tCase) => {
+  console.log(`\nEquation '${tCase.testCase}', Expected Result '${tCase.expectedResult}':`);
+  console.log(`Output: ${balancedParenthesis(tCase.testCase)}`);
+})
