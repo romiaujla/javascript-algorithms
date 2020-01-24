@@ -1,2 +1,2 @@
 language = "nodejs"
-run = "node ./balancedParanthesis"
+run = "node ./BalancedParenthesis/balancedParenthesis"

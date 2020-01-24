@@ -10,7 +10,7 @@ x + y / ) z + 1 ( * (r - z) should return false
 (x + y) / ) z + 1 ( * (r - z) should return false
 */
 
-// function balancedParanthesis(equation){
+// function balancedParenthesis(equation){
   
 //   let pStack = [];
 
@@ -53,7 +53,7 @@ x + y / ) z + 1 ( * (r - z) should return false
 
 
 
-function balancedParanthesis(equation){
+function balancedParenthesis(equation){
   
   let pStack = [];
 
@@ -105,12 +105,12 @@ function balancedParanthesis(equation){
   return true;
 }
 
-console.log(`expect 1 true: `, balancedParanthesis(`x*(x+z) + [x/(y-z) + d]`));
-console.log(`expect 2 false: `, balancedParanthesis(`t – (s-k) } + x`));
-console.log(`expect 3 false: `, balancedParanthesis(`x*(x+z) + {][x/(y-z) + d][}`));
-console.log(`expect 4 true: `, balancedParanthesis(`x*(x+z) + x/(y-z) + d`));
-console.log(`expect 5 false: `, balancedParanthesis(`t – (s-k + x `))
-console.log(`expect 6 false: `, balancedParanthesis(`((x + y) * (x + 7)) / )y(`))
-console.log(`expect 7 true: `, balancedParanthesis(`(((x+z)/(x*y)) + 4 )`))
-console.log(`expect 8 false: `, balancedParanthesis(`x + y / ) z + 1 ( * (r - z)`))
-console.log(`expect 9 false: `, balancedParanthesis(`(x + y) / ) z + 1 ( * (r - z)`))
+console.log(`expect 1 true: `, balancedParenthesis(`x*(x+z) + [x/(y-z) + d]`));
+console.log(`expect 2 false: `, balancedParenthesis(`t – (s-k) } + x`));
+console.log(`expect 3 false: `, balancedParenthesis(`x*(x+z) + {][x/(y-z) + d][}`));
+console.log(`expect 4 true: `, balancedParenthesis(`x*(x+z) + x/(y-z) + d`));
+console.log(`expect 5 false: `, balancedParenthesis(`t – (s-k + x `))
+console.log(`expect 6 false: `, balancedParenthesis(`((x + y) * (x + 7)) / )y(`))
+console.log(`expect 7 true: `, balancedParenthesis(`(((x+z)/(x*y)) + 4 )`))
+console.log(`expect 8 false: `, balancedParenthesis(`x + y / ) z + 1 ( * (r - z)`))
+console.log(`expect 9 false: `, balancedParenthesis(`(x + y) / ) z + 1 ( * (r - z)`))
