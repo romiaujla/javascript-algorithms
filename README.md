@@ -23,3 +23,11 @@ Practicing Algorithms in Javascript
 - Language: JavaScript
 - run `node ./Palindrome/isPalindrome`
 - Best Run time - O(N/2) ≅ O(N)
+
+<hr />
+
+#### [Converting Minutes to Seconds](https://github.com/romiaujla/javascript-algorithms/blob/master/ConvertingMinutesToSeconds/convert.js)
+- [Link to Code](https://github.com/romiaujla/javascript-algorithms/blob/master/ConvertingMinutesToSeconds/convert.js)
+- Language: JavaScript
+- run `node ./ConvertingMinutesToSeconds/convert`
+- Best Run time - O(1) constant time
