@@ -1,5 +1,14 @@
 function reverse(str){
-  return str.split('').reverse().join('');
+  str = str.split('');
+
+  for(let i = 0; i < str.length/2; i++){
+    const leftChar = str[i];
+    const rightChar = str[str.length-1-i]
+    str[i] = rightChar;
+    str[str.length-1-i] = leftChar;
+  }
+
+  return str.join('');
 }
 
 
