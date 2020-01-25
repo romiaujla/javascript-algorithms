@@ -50,4 +50,4 @@ Practicing Algorithms in Javascript
 - [Link to Code](https://github.com/romiaujla/javascript-algorithms/blob/master/DistanceBetween/getDistance.js)
 - Language: JavaScript
 - run `node ./DistanceBetween/getDistance`
-- Run Time: ???
+- Run Time: O(1), constant time
