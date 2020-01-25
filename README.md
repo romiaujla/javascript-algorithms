@@ -43,8 +43,11 @@ Practicing Algorithms in Javascript
 > Given two object literals a and b being the two points coordinates (x and y), implement a function that returns the distance between the points, rounded to the nearest thousandth.
 > 
 > Examples
+>
 > getDistance({x: -2, y: 1}, {x: 4, y: 3}) ➞ 6.325
+>
 > getDistance({x: 0, y: 0}, {x: 1, y: 1}) ➞ 1.414
+>
 > getDistance({x: 10, y: -5}, {x: 8, y: 16}) ➞ 21.095
 
 - [Link to Code](https://github.com/romiaujla/javascript-algorithms/blob/master/DistanceBetween/getDistance.js)
