@@ -34,7 +34,7 @@ Practicing Algorithms in Javascript
 
 <hr />
 
-#### [Distance Between Two Points]((https://github.com/romiaujla/javascript-algorithms/blob/master/DistanceBetween/getDistance.js))
+#### [Distance Between Two Points](https://github.com/romiaujla/javascript-algorithms/blob/master/DistanceBetween/getDistance.js)
 
 > In this challenge, you have to find the distance between two points placed on a Cartesian plane. Knowing the coordinates of both the points, you have to apply the Pythagorean theorem to find the distance between them.
 >
@@ -47,7 +47,7 @@ Practicing Algorithms in Javascript
 > getDistance({x: 0, y: 0}, {x: 1, y: 1}) ➞ 1.414
 > getDistance({x: 10, y: -5}, {x: 8, y: 16}) ➞ 21.095
 
-- [Link to Code](https://github.com/romiaujla/javascript-algorithms/blob/master/DistanceBetween/getDistance.js))
+- [Link to Code](https://github.com/romiaujla/javascript-algorithms/blob/master/DistanceBetween/getDistance.js)
 - Language: JavaScript
 - run `node ./DistanceBetween/getDistance`
 - Run Time: ???
