@@ -5,13 +5,47 @@
  * @return {string} The longest alternate substring
  */
 function longestSubstring(str){
-  const longestString = str;
+  
+  let longestString = '';
+  let evenInt = false;
+  let altString = '';
+
+  // Approach O(N)
+  for(let i = 0; i < str.length; i++){
+
+    let prevIntIsEven = evenInt;
+
+    // change the evenInt based on the current number
+    if(str[i] % 2 === 0){
+      evenInt = true;
+    }else{
+      evenInt = false;
+    }
+
+    // If previous number is an alternate from odd/even then add it to the current alternate String
+    if(evenInt !== prevIntIsEven){
+      altString += str[i];
+    }else{
+      // else if the previous number is not an alternate odd/even
+
+      // only change the longest string if the current alternate string is longer than the
+      // previous longest string. 
+      if(longestString.length < altString.length){
+        longestString = altString;
+      }
+
+      // empty out the longest alternate string
+      altString = '';
+      // initiate a new string with the current num
+      altString += str[i];
+    } 
+  }
 
   return longestString;
 }
 
 /**
- * Initiates the function and runs the test cases
+ * Initiates the program and runs the test cases
  */
 function main(){
   const testCases = [
