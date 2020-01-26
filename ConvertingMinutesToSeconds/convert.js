@@ -1,15 +1,11 @@
-/*
-  Write a function that takes an integer minutes and converts it to seconds.
-  Examples:
-  convert(5) ➞ 300
-
-  convert(3) ➞ 180
-
-  convert(2) ➞ 120
-
-  Question Link: https://edabit.com/challenge/8q54MKnRrm89pSLmW
-*/
-
+/**
+ * Converts minutes to seconds
+ * @param {integer} | minutes | number of minutes to be converted to seconds
+ * @return {string}
+ *  - if minutes is not a number then returns an error message
+ *  - if minutes is a negative number then returns an error message
+ *  - else return number of seconds in a formatted string
+ */
 function convert(minutes){
 
   if(isNaN(minutes))
@@ -23,6 +19,10 @@ function convert(minutes){
   return `${minutes*60} seconds`;
 }
 
+
+/**
+ * Initiates the program and runs the test cases
+ */
 function main(){
   const testCases = [
     '5',

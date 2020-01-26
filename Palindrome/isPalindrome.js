@@ -1,3 +1,8 @@
+/**
+ * Reverses a String
+ * @param {string} str String to be reversed
+ * @return {string} the reversed string
+ */
 function reverse(str){
   str = str.split('');
 
@@ -12,6 +17,11 @@ function reverse(str){
 }
 
 
+/**
+ * Checks if the string is a palindrome or not
+ * @param {string} str String to check if it is a palindrome
+ * @return {boolean} true if it is a Palindrome, false otherwise.
+ */
 function isPalindrome(str){
   if(!str.length)
     return `empty string`;
@@ -19,8 +29,9 @@ function isPalindrome(str){
   return str === reverse(str);
 }
 
-// Going to make a habit to use a 
-// main function to begin things with
+/**
+ * Initiates the program and runs the test cases
+ */
 function main(){
 
   // all the testCases
@@ -34,9 +45,6 @@ function main(){
   testCases.map((tCase) => {
     console.log(`\nString: ${tCase.length ? tCase : `'empty string'`} is a Palindrome: ${isPalindrome(tCase)}`);
   })
-
-  
-
 }
 
 main();

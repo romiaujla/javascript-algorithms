@@ -1,0 +1,12 @@
+Given the following expression, write an algorithm to check if the formula has correctly implemented parenthesis (check to see if there are any lone parenthesis. That every open parenthesis has a closed on) - Check if the formula has any unmatched parenthesis.
+
+Test cases:
+x*(x+z) + x/(y-z) + d should return true
+t – (s-k + x should return false
+((x + y) * (x + 7)) / )y( should return false
+(((x+z)/(x*y)) + 4 ) should return true
+x + y / ) z + 1 ( * (r - z) should return false
+(x + y) / ) z + 1 ( * (r - z) should return false
+x*(x+z) + [x/(y-z) + d] should return true 
+t – (s-k) } + x should return false 
+x*(x+z) + {][x/(y-z) + d][} should return false
