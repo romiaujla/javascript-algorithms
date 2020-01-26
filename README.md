@@ -75,3 +75,8 @@ Practicing Algorithms in Javascript
 >
 > Notes
 > The minimum alternating substring size is 2.
+
+- [Link to Code](https://github.com/romiaujla/javascript-algorithms/blob/master/LongestAlternatingSubstring/longestSubstring.js)
+- Language :JavaScript
+- run `node ./LongestAlternatingSubstring/longestSubstring`
+- Run Time: O(N)
