@@ -5,6 +5,7 @@
  */
 function numberInWords(num){
   let numInWords = '';
+
   const singleWords = {
     0: 'zero',
     1: 'one',
@@ -36,11 +37,10 @@ function numberInWords(num){
     90: 'ninety'
   }
 
-  if(num < 10 && num >= 0 ){
+  
+  if(num >= 0 && num <= 19 ){
     return singleWords[num];
   }
-
-  
 
   return numInWords;
 }
