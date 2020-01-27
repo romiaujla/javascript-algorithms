@@ -3,7 +3,7 @@
  * @param {integer} , num, the number to be converted into words
  * @return {string} , the coverted number in words
  */
-function numberInWords(num){
+function numToEng(num){
   let numInWords = '';  
 
   // will be using this as a number that will be reduced by 1000
@@ -115,7 +115,7 @@ function main(){
 
   testCases.map(tCase => {
     console.log();
-    console.log(`numToEng(${tCase}) ➞ ${numberInWords(tCase)}`);
+    console.log(`numToEng(${tCase}) ➞ ${numToEng(tCase)}`);
   })
 }
 
